@@ -98,7 +98,7 @@ const InscriptionPage = () => {
           >
             <div className="flex items-center mb-4">
               <AlertCircle className="w-6 h-6 text-yellow-600 mr-3" />
-               <h3 className="text-sm md:text-xl font-bold text-yellow-900 font-montserrat">Date limite d'inscription - 1er décembre 2025</h3>
+               <h3 className="text-sm md:text-xl font-bold text-yellow-900 font-montserrat">Date limite d'inscription - 1er décembre 2026</h3>
             </div>
              <ul className="space-y-2 text-xs md:text-base text-gray-700">
               <li>Places limitées !</li>
