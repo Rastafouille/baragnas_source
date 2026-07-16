@@ -1,7 +1,7 @@
-﻿import React from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
-import { ExternalLink, Calendar, Users, Euro, AlertCircle } from 'lucide-react';
+import { Calendar, Users, Euro, AlertCircle } from 'lucide-react';
 // import RaidNavigation supprimé
 
 const InscriptionPage = () => {
@@ -113,17 +113,11 @@ const InscriptionPage = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="text-center"
           >
-            <a
-              href="https://www.helloasso.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-[#2D5016] hover:bg-green-700 text-white font-bold py-3 px-6 md:py-5 md:px-12 rounded-lg text-sm md:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl"
-            >
-              <span>S'inscrire maintenant</span>
-              <ExternalLink className="w-6 h-6 ml-3" />
-            </a>
+            <div className="inline-flex items-center justify-center bg-gray-300 text-gray-700 font-bold py-3 px-6 md:py-5 md:px-12 rounded-lg text-sm md:text-xl shadow-lg cursor-not-allowed" aria-disabled="true">
+              <span>Inscriptions pas encore ouvertes</span>
+            </div>
             <p className="text-xs md:text-sm text-gray-600 mt-4">
-              Vous serez redirigé vers notre plateforme d'inscription sécurisée
+              Le formulaire d'inscription sera mis en ligne prochainement.
             </p>
           </motion.div>
 

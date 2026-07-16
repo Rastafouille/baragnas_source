@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 // import RaidNavigation supprimé
@@ -92,7 +92,7 @@ const ChristmasRaidPage = () => {
               textShadow: '3px 3px 0px rgba(0, 0, 0, 0.4), 1px 1px 0px rgba(0, 0, 0, 0.3), -1px -1px 1px rgba(255, 255, 255, 0.1)',
             }}
           >
-            Raid de Noël 2025
+            Raid de Noël 2026
           </h1>
             <p className="text-sm md:text-lg text-white/90 mb-1 font-poppins flex items-center justify-center gap-2">
             <Clock className="w-5 h-5 md:w-6 md:h-6" />
@@ -118,7 +118,7 @@ const ChristmasRaidPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#2D5016] font-montserrat">
-              De retour en 2025 !
+              De retour en 2026 !
             </h2>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-4 max-w-4xl mx-auto">
               La commune de Saint-Etienne-des-Sorts nous accueille une nouvelle fois pour ce raid qui s'annonce ludique et accessible au plus grand nombre.

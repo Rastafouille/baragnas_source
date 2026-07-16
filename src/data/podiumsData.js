@@ -6,7 +6,7 @@
  * Laissez "" si pas de résultat.
  */
 
-export const podiumsYear = 2025;
+export const podiumsYear = 2026;
 
 export const podiumsData = {
   court: {

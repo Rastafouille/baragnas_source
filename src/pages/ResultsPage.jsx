@@ -6,8 +6,8 @@ import { FileText, Download, ExternalLink, Trophy } from 'lucide-react';
 import { podiumsData, podiumsYear } from '@/data/podiumsData';
 
 const resultsPdf = [
-  { year: 2025, label: 'Raid long 2025', file: 'RAID-de-NOEL-LONG-2025.pdf' },
-  { year: 2025, label: 'Raid court 2025', file: 'RAID-de-NOEL-2025-court.pdf' },
+  { year: 2026, label: 'Raid long 2026', file: 'RAID-de-NOEL-LONG-2025.pdf' },
+  { year: 2026, label: 'Raid court 2026', file: 'RAID-de-NOEL-2025-court.pdf' },
   { year: 2024, label: 'Raid long 2024', file: 'long2024.pdf' },
   { year: 2024, label: 'Raid court 2024', file: 'court2024.pdf' },
   { year: 2023, label: 'Raid long 2023', file: 'resultat-long-2023.pdf' },

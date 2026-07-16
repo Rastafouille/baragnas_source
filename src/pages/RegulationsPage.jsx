@@ -207,7 +207,7 @@ const RegulationsPage = () => {
       <title>Baragnas - RdN</title>
       <meta
           name="description"
-          content="Consultez le règlement complet du Raid de Noël 2025 organisé par Baragnas. Sécurité, équipement et règles de participation."
+          content="Consultez le règlement complet du Raid de Noël 2026 organisé par Baragnas. Sécurité, équipement et règles de participation."
         />
       </Helmet>
 
