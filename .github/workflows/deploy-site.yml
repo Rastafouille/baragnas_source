@@ -1,0 +1,48 @@
+﻿name: Deploy dist to baragnas_site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Checkout site repo
+        uses: actions/checkout@v4
+        with:
+          repository: Rastafouille/baragnas_site
+          token: ${{ secrets.BARAGNAS_SITE_TOKEN }}
+          path: baragnas_site
+
+      - name: Replace site with dist
+        run: |
+          find baragnas_site -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -R dist/. baragnas_site/
+
+      - name: Commit and push
+        working-directory: baragnas_site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet && exit 0
+          git commit -m "Deploy site from baragnas_source"
+          git push
